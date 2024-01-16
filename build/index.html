@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>DecoDev</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="DecoDev: Soluções inovadoras em desenvolvimento de software e design.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@DecoDev">
+  <meta name="twitter:title" content="DecoDev">
+  <meta name="twitter:description" content="Liderando a inovação em desenvolvimento de software e design.">
+  <meta name="twitter:creator" content="@DecoDev">
+  <meta name="twitter:image" content="https://i.ibb.co/zbkxhz5/logo.png">
+  <meta property="og:title" content="DecoDev">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.exemplo.com">
+  <meta property="og:image" content="https://i.ibb.co/zbkxhz5/logo.png">
+  <meta property="og:description" content="DecoDev: Inovando em desenvolvimento de software e design.">
+  <meta property="og:site_name" content="DecoDev">
+
+
+  <link rel="stylesheet" media="all" href="css/app.css">
+  <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+      if (screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+      } else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="main">
+      <div class="header js-header" id="header">
+        <div class="header__center center"><a class="header__logo" href="index.html"><img class="header__pic"
+              src="img/logo.svg" alt="" /></a>
+          <div class="header__social header__social_main"><a class="header__link" href="#"><svg
+                class="icon icon-dribbble">
+                <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+              </svg>LinkedIn</a><a class="header__link" href="#"><svg class="icon icon-instagram">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>Instagram</a></div><button class="header__burger js-header-burger"></button>
+        </div>
+        <div class="header__wrapper js-header-wrapper" style="padding: 0;">
+          <div class="header__preview">
+            <a class="header__logo" href="index.html">
+              <img class="header__pic" src="img/logo-white.svg" alt="" />
+            </a>
+            <div class="header__img">
+              <img class="header__pic" src="img/bg-header.png" alt="" />
+            </div>
+          </div>
+          <div class="header__center center">
+            <div class="header__contacts">
+              <a class="header__line" href="mailto:decodev@gmail.com">
+                <div class="header__icon">
+                  <svg class="icon icon-email">
+                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                  </svg>
+                </div>
+                <div class="header__text">decodev@gmail.com</div>
+              </a>
+              <div class="header__line">
+                <div class="header__icon">
+                  <svg class="icon icon-place">
+                    <use xlink:href="img/sprite.svg#icon-place"></use>
+                  </svg>
+                </div>
+                <div class="header__text">
+                  <p>Somewhere in Pernambuco</p>
+                  <p>Hint - Recife ✌️</p>
+                </div>
+              </div>
+              <a class="header__line" href="tel:+5511987654321">
+                <div class="header__icon">
+                  <svg class="icon icon-phone">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+                <div class="header__text">+55 81 98765-4321</div>
+              </a>
+            </div>
+            <nav class="header__nav">
+              <a class="header__item" href="#"><span>Sobre</span></a>
+              <a class="header__item" href="#projects"><span>Projetos</span></a>
+              <a class="header__item" href="#services"><span>Serviços</span></a>
+              <a class="header__item" href="#contacts"><span>Contato</span></a>
+            </nav>
+
+            <div class="header__social header__social_inner"><a class="header__link" href="#"><svg
+                  class="icon icon-dribbble">
+                  <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                </svg>LinkedIn</a><a class="header__link" href="#"><svg class="icon icon-instagram">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>Instagram</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="main__bg"><img class="main__pic" src="img/bg-main.jpg" alt=""></div>
+      <div class="main__center center">
+        <div class="main__wrap">
+          <div class="main__stage stage" data-aos="transform">DecoDev</div>
+          <h1 class="main__title title h1"><span data-aos="transform" data-aos-delay="150">Olá, somos a
+              decodev</span><span data-aos="transform" data-aos-delay="300">Desenvolvemos Software.</span><span
+              data-aos="transform" data-aos-delay="450">E Design.</span><span data-aos="transform"
+              data-aos-delay="600">Com Qualidade.</span>
+          </h1><a class="scroll js-scroll" href="#details" data-aos="transform">
+            <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt=""></div>
+            <div class="scroll__text">Scroll down</div>
+          </a>
+        </div>
+      </div>
+      <div class="main__view" data-aos>
+        <div class="main__preview"><img class="main__pic" src="img/main-pic-6.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic js-parallax" data-scale="2.5" data-orientation="up"
+            src="img/main-pic-1.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.5" data-orientation="up"
+            src="img/main-pic-2.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic" src="img/main-pic-3.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic" src="img/main-pic-4.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic js-parallax" data-scale="4.5" data-orientation="up"
+            src="img/main-pic-5.png" alt=""></div>
+        <div class="main__preview"><img class="main__pic js-parallax" data-scale="1.5" data-orientation="down"
+            src="img/main-pic-7.png" alt=""></div>
+      </div>
+      <div class="main__figures">
+        <div class="main__figure" data-aos="animation-translate-y"><img class="main__pic js-parallax" data-scale="2.2"
+            data-orientation="down" src="img/figure-1.png" alt=""></div>
+        <div class="main__figure" data-aos="animation-translate-y" data-aos-delay="200"><img
+            class="main__pic js-parallax" data-scale="2.2" data-orientation="up" src="img/figure-2.png" alt=""></div>
+        <div class="main__figure" data-aos="animation-translate-y" data-aos-delay="400"><img class="main__pic"
+            src="img/figure-3.png" alt=""></div>
+      </div>
+    </div>
+    <div class="details" id="details" style="padding: 0;">
+      <div class="details__center center">
+        <div class="details__head" data-aos="animation-scale-y">
+          <div class="details__stage stage">O Que Nós Fazemos</div>
+          <h3 class="details__info h3">Nós adoramos criar experiências digitais agradáveis e centradas no ser humano.
+          </h3>
+        </div>
+        <h2 class="details__title" data-aos="animation-scale-y">Pensar. Criar. Resolver.</h2>
+        <div class="details__btn" data-aos="animation-translate-y">
+          <button class="btn btn_purple"><a class="scroll js-scroll" href="#contacts" data-aos="transform"
+              style="text-decoration: none; color: white; font-weight: 500; font-size: 1rem;"><span
+                class="btn__text">Entre em Contato</span></a>
+            <svg class="icon icon-arrow-right">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="details__container" id="services">
+          <div class="details__slider owl-carousel js-slider-details">
+            <div class="details__item">
+              <div class="details__preview details__preview_cursor" data-aos="animation-scale">
+                <div class="details__img"><img class="details__pic" src="img/cursor.png" alt=""></div>
+              </div>
+              <h5 class="details__category h5" data-aos="animation-scale-y">Soluções inovadoras</h5>
+              <div class="details__text" data-aos="animation-scale-y">Oferecemos soluções prontas para aprimorar a
+                gestão de projetos de desenvolvimento de software, prontas para uso imediato.</div>
+              <div class="details__btn" data-aos="animation-scale-y">
+                <button class="btn btn_dark">Saiba mais</button>
+              </div>
+            </div>
+            <div class="details__item">
+              <div class="details__preview details__preview_hand" data-aos="animation-scale" data-aos-delay="150">
+                <div class="details__img"><img class="details__pic" src="img/hand.png" alt=""></div>
+              </div>
+              <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="150">Experiência em UX/UI
+              </h5>
+              <div class="details__text" data-aos="animation-scale-y" data-aos-delay="150">Nossa abordagem focada no
+                usuário resulta em designs de UI/UX que melhoram a gestão de projetos.</div>
+              <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="150">
+                <button class="btn btn_dark">Saiba mais</button>
+              </div>
+            </div>
+            <div class="details__item">
+              <div class="details__preview details__preview_color" data-aos="animation-scale" data-aos-delay="300">
+                <div class="details__img"><img class="details__pic" src="img/color-picker.png" alt=""></div>
+              </div>
+              <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="300">Web Design</h5>
+              <div class="details__text" data-aos="animation-scale-y" data-aos-delay="300">Oferecemos soluções de web
+                design personalizado para criar sites excepcionais e melhorar a experiência do usuário.</div>
+              <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="300">
+                <button class="btn btn_dark">Saiba mais</button>
+              </div>
+            </div>
+            <div class="details__item">
+              <div class="details__preview details__preview_cursor">
+                <div class="details__img"><img class="details__pic" src="img/cursor.png" alt=""></div>
+              </div>
+              <h5 class="details__category h5">Interface do Usuário</h5>
+              <div class="details__text">Desenvolvemos interfaces prontas para aprimorar a gestão de projetos de forma
+                imediata e eficaz.</div>
+              <button class="details__btn btn btn_dark">Saiba mais</button>
+            </div>
+            <div class="details__item">
+              <div class="details__preview details__preview_hand">
+                <div class="details__img"><img class="details__pic" src="img/hand.png" alt=""></div>
+              </div>
+              <h5 class="details__category h5">Experiência do Usuário</h5>
+              <div class="details__text">Aprimoramos a interação do usuário para otimizar a gestão de projetos com
+                eficácia imediata.</div>
+
+              <button class="details__btn btn btn_dark">Saiba mais</button>
+            </div>
+
+            <div class="details__item">
+              <div class="details__preview details__preview_color" data-aos="animation-scale" data-aos-delay="300">
+                <div class="details__img"><img class="details__pic" src="img/color-picker.png" alt=""></div>
+              </div>
+              <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="300">Design de Interface
+              </h5>
+              <div class="details__text" data-aos="animation-scale-y" data-aos-delay="300">Desenvolvemos interfaces
+                intuitivas e atraentes para otimizar a usabilidade de seus projetos.</div>
+              <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="300">
+                <button class="btn btn_dark">Saiba mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="details__figures">
+          <div class="details__figure"><img class="details__pic js-parallax" data-scale="2" data-orientation="down"
+              src="img/figure-1.png" alt=""></div>
+          <div class="details__figure"><img class="details__pic js-parallax" data-scale="2" data-orientation="up"
+              src="img/figure-2.png" alt=""></div>
+          <div class="details__figure"><img class="details__pic js-parallax" data-scale="1.2" data-orientation="up"
+              src="img/figure-3.png" alt=""></div>
+        </div>
+      </div>
+      <div class="work">
+        <div class="work__circles"></div>
+        <div class="work__center center">
+          <div class="work__wrap">
+            <div class="work__stage stage stage_pink" data-aos="animation-scale-y">Nossos Parceiros</div>
+            <h2 class="work__title title h1" data-aos="animation-scale-y" data-aos-delay="150"
+              style="font-size: 2.4rem;">
+              Desenvolvimento de
+              Software e Design para empresas de renome.</h2>
+            <div class="work__text" data-aos="animation-scale-y" data-aos-delay="300">Pesquisamos e desenvolvemos ideias
+              inovadoras, entregando soluções de software e design de alto impacto para empresas.</div>
+            <a class="scroll js-scroll" data-aos="animation-scale-y" href="#cases">
+              <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt=""></div>
+              <div class="scroll__text">Scroll down</div>
+            </a>
+          </div>
+        </div>
+        <div class="work__preview"><img class="work__pic js-parallax" data-scale="2" data-orientation="down"
+            src="img/work-cube.png" alt=""></div>
+        <div class="work__figures" data-aos>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.3" data-orientation="up"
+              src="img/work-cube-1.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.5" data-orientation="up left"
+              src="img/work-cube-2.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.3" data-orientation="up right"
+              src="img/work-cube-3.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic" src="img/work-cube-4.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.1" data-orientation="left"
+              src="img/work-cube-5.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.2" data-orientation="right"
+              src="img/work-cube-6.png" alt=""></div>
+          <div class="work__figure"><img class="work__pic js-parallax" data-scale="1.2" data-orientation="down"
+              src="img/work-cube-7.png" alt=""></div>
+        </div>
+      </div>
+      <div class="wrapper wrapper_gradient" id="projects">
+        <div class="cases cases_main" id="cases">
+          <div class="cases__center center">
+            <div class="cases__stage stage" data-aos="animation-scale-y">Portfolio</div>
+            <h2 class="cases__title h1" data-aos="animation-scale-y" data-aos-delay="150">Veja Nossos<br>Projetos.</h2>
+            <div class="cases__nav" data-aos="animation-scale-y" data-aos-delay="300">
+              <a class="cases__link" data-category="website" href="#">Website</a>
+              <a class="cases__link" data-category="illustration" href="#">Illustration</a>
+              <a class="cases__link" data-category="mobile" href="#">Mobile</a>
+              <a class="cases__link" data-category="all" href="#">Ver todos</a>
+
+            </div>
+            <div class="cases__list js-owl" data-items-mobile-portrait="1" data-items-mobile-album="1" data-autoheight>
+
+              <a class="cases__item" data-category="website" data-aos="animation-translate-y" data-aos-delay="200"
+                href="#">
+                <div class="cases__preview"><img class="cases__pic" src="img/cases-pic-1.jpg" alt="">
+                  <div class="cases__box">Case <br>Study</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Plataforma de E-commerce</h4>
+                  <div class="cases__text">Interface de usuário revolucionária com sistema de pagamento integrado para
+                    uma experiência de compra única.</div>
+                </div>
+
+              </a>
+
+              <a class="cases__item" data-category="mobile" data-aos="animation-translate-y" data-aos-delay="" href="#">
+                <div class="cases__preview"><img class="cases__pic" src="img/cases-pic-2.jpg" alt="">
+                  <div class="cases__box">Case <br>Study</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">App de Saúde e Fitness</h4>
+                  <div class="cases__text">Rastreamento de fitness interativo e recomendações personalizadas para um
+                    estilo de vida mais saudável.</div>
+                </div>
+
+              </a>
+              <a class="cases__item" data-category="website" data-aos="animation-translate-y" data-aos-delay=""
+                href="#">
+                <div class="cases__preview"><img class="cases__pic" src="img/cases-pic-3.jpg" alt="">
+                  <div class="cases__box">Case <br>Study</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Portal Corporativo</h4>
+                  <div class="cases__text">Sistema de portal empresarial com integrações eficientes para melhor
+                    comunicação e análise de dados.</div>
+                </div>
+
+              </a>
+
+              <a class="cases__item" data-category="website" data-aos="animation-translate-y" data-aos-delay="200"
+                href="#">
+                <div class="cases__preview"><img class="cases__pic" src="img/cases-pic-4.jpg" alt="">
+                  <div class="cases__box">Case <br>Study</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Blog Pessoal</h4>
+                  <div class="cases__text">Combinação elegante de blog pessoal e portfólio, destacando experiências
+                    profissionais e reflexões pessoais com design atrativo.</div>
+                </div>
+
+              </a>
+
+              <a class="cases__item" data-category="website" data-aos="animation-translate-y" data-aos-delay=""
+                href="#">
+                <div class="cases__preview"><img class="cases__pic" src="img/cases-pic-5.jpg" alt="">
+                  <div class="cases__box">Case <br>Study</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Solução de Aprendizado Online</h4>
+                  <div class="cases__text">Plataforma de ensino à distância com cursos interativos e gamificados para
+                    engajamento máximo dos alunos.</div>
+                </div>
+
+              </a>
+
+              <a class="cases__item" data-category="website" data-aos="animation-translate-y" data-aos-delay="200"
+                href="#">
+                <div class="cases__preview"><img class="cases__pic" src="img/cases-pic-6.jpg" alt="">
+                  <div class="cases__box">Case <br>Study</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Gestão de Tarefas e Projetos</h4>
+                  <div class="cases__text">Plataforma intuitiva para gerenciamento de projetos, inspirada no Trello.
+                    Organize tarefas, acompanhe o progresso e colabore com sua equipe em tempo real.</div>
+                </div>
+              </a>
+
+
+            </div>
+          </div>
+          <div class="cases__figures">
+            <div class="cases__figure"><img class="cases__pic js-parallax" data-scale="2" data-orientation="down"
+                src="img/figure-2.png" alt=""></div>
+            <div class="cases__figure"><img class="cases__pic js-parallax" data-scale="1.8" data-orientation="down"
+                src="img/figure-3.png" alt=""></div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__center center">
+            <div class="review__stage stage" data-aos="animation-scale-y">O Que as Pessoas Dizem</div>
+            <h2 class="review__title title h1" data-aos="animation-scale-y" data-aos-delay="200">Confiado pelos
+              <br>Clientes.
+            </h2>
+            <div class="review__container" data-aos="animation-translate-y" data-aos-delay="400">
+              <div class="review__slider owl-carousel js-slider-review">
+                <div class="review__item">
+                  <div class="review__text" style="text-align: justify;">“DecoDev foi essencial no lançamento de nosso
+                    produto de tecnologia. Sua habilidade em transformar ideias em realidade é excepcional. Recomendo
+                    fortemente para qualquer start-up de tecnologia!”</div>
+                  <div class="review__author">
+                    <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                    <div class="review__details">
+                      <div class="review__man h5">Rafael</div>
+                      <div class="review__company">CEO - TechStart</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__item">
+                  <div class="review__text" style="text-align: justify;">“DecoDev apresenta uma abordagem única e
+                    inspiradora, perfeita para
+                    freelancers e designers. Montar minha página no Sketch foi um processo simples e prazeroso!”</div>
+                  <div class="review__author">
+                    <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                    <div class="review__details">
+                      <div class="review__man h5">Mariana</div>
+                      <div class="review__company">Designer Freelancer</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__item">
+                  <div class="review__text " style="text-align: justify;">“DecoDev foi essencial no lançamento de nosso
+                    produto de tecnologia. Sua habilidade em transformar ideias em realidade é excepcional. Recomendo
+                    fortemente para qualquer start-up de tecnologia!”</div>
+                  <div class="review__author">
+                    <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                    <div class="review__details">
+                      <div class="review__man h5">Rafael</div>
+                      <div class="review__company">CEO - TechStart</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__item">
+                  <div class="review__text" style="text-align: justify;">“A expertise da DecoDev no desenvolvimento de
+                    software personalizado superou todas as expectativas. Sua abordagem ágil e eficiente acelerou nosso
+                    projeto de forma significativa.”</div>
+                  <div class="review__author">
+                    <div class="review__ava"><img class="review__pic" src="img/ava-1.jpg" alt=""></div>
+                    <div class="review__details">
+                      <div class="review__man h5">Juliana</div>
+                      <div class="review__company">CTO - InovaTech</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review__bg">
+            <div class="review__preview"><img class="review__pic js-parallax" data-scale="1.5" data-orientation="down"
+                src="img/review-cube.png" alt=""></div>
+            <div class="review__preview"><img class="review__pic" src="img/review-cube.png" alt=""></div>
+          </div>
+        </div>
+        <div class="wrapper wrapper_dark" id="contacts">
+          <div class="contacts">
+            <div class="contacts__center center">
+              <div class="contacts__container">
+                <div class="contacts__wrap">
+                  <div class="contacts__stage stage" data-aos="animation-scale-y">Diga olá 👋</div>
+                  <h2 class="contacts__title h1" data-aos="animation-scale-y" data-aos-delay="200"
+                    style="font-size: 3.8rem;">Vamos Trabalhar
+                    <br>Juntos.
+                  </h2>
+                  <div class="contacts__info" data-aos="animation-scale-y" data-aos-delay="400">Gostaria muito de me
+                    encontrar com você para discutir seu projeto e possíveis colaborações.</div>
+                </div>
+
+                <div class="contacts__row">
+                  <div class="contacts__details" data-aos="animation-translate-y"><a class="contacts__line"
+                      href="mailto:hello@ui8.net">
+                      <div class="contacts__icon"><svg class="icon icon-email">
+                          <use xlink:href="img/sprite.svg#icon-email"></use>
+                        </svg></div>
+                      <div class="contacts__text">decodev@gmail.com</div>
+                    </a>
+                    <div class="contacts__line">
+                      <div class="contacts__icon"><svg class="icon icon-place">
+                          <use xlink:href="img/sprite.svg#icon-place"></use>
+                        </svg></div>
+                      <div class="contacts__text">
+                        <p>4074 Ebert Summit Suite 375</p>
+                        <p>Lake Leonardchester</p>
+                      </div>
+                    </div><a class="contacts__line" href="tel:+441236547890">
+                      <div class="contacts__icon"><svg class="icon icon-phone">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg></div>
+                      <div class="contacts__text">+44 123 654 7890</div>
+                    </a>
+                  </div>
+                  <form class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200">
+                    <div class="contacts__field field">
+                      <div class="field__wrap"><input class="field__input" type="text" name="name" placeholder="Name" />
+                        <div class="field__icon"><svg class="icon icon-profile">
+                            <use xlink:href="img/sprite.svg#icon-profile"></use>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div class="contacts__field field">
+                      <div class="field__wrap"><input class="field__input" type="email" name="email"
+                          placeholder="Email" />
+                        <div class="field__icon"><svg class="icon icon-send">
+                            <use xlink:href="img/sprite.svg#icon-send"></use>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div class="contacts__field field">
+                      <div class="field__wrap"><select class="field__select" name="question">
+                          <option>Em que você está trabalhando?</option>
+                          <option>Design de Interface</option>
+                          <option>Desenvolvimento de Website</option>
+                          <option>Criação de Aplicativo</option>
+                          <option>Desenvolvimento de Sistema</option>
+                          <option>Manutenção de Software</option>
+                          <option>Soluções em Cloud</option>
+                          <option>Integrações de Sistema</option>
+                        </select>
+                        <div class="field__icon"><svg class="icon icon-arrows">
+                            <use xlink:href="img/sprite.svg#icon-arrows"></use>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div class="contacts__field field">
+                      <div class="field__wrap"><select class="field__select" name="question">
+                          <option>Eai, vamos marcar essa call? 😊</option>
+                          <option>Segunda-feira</option>
+                          <option>Terça-feira</option>
+                          <option>Quarta-feira</option>
+                          <option>Quinta-feira</option>
+                          <option>Sexta-feira</option>
+
+                        </select>
+                        <div class="field__icon"><svg class="icon icon-arrows">
+                            <use xlink:href="img/sprite.svg#icon-arrows"></use>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div class="contacts__field field field_textarea">
+                      <div class="field__wrap"><textarea class="field__textarea" name="message"
+                          placeholder="Message"></textarea>
+                        <div class="field__icon"><svg class="icon icon-message">
+                            <use xlink:href="img/sprite.svg#icon-message"></use>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div class="contacts__btn"><button class="btn btn_purple"><span class="btn__text">Let’s
+                          Talk</span><svg class="icon icon-arrow-right">
+                          <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                        </svg></button></div>
+                  </form>
+                </div>
+                <div class="contacts__category h5">Let’s connect</div>
+                <div class="contacts__social">
+                  <div class="contacts__box" data-aos="animation-translate-y"><a class="contacts__link" href="#"><svg
+                        class="icon icon-instagram">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                      </svg>
+                      <div class="contacts__text">Facebook</div>
+                    </a></div>
+                  <div class="contacts__box" data-aos="animation-translate-y" data-aos-delay="150"><a
+                      class="contacts__link" href="#"><svg class="icon icon-instagram">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                      </svg>
+                      <div class="contacts__text">Instagram</div>
+                    </a></div>
+                  <div class="contacts__box" data-aos="animation-translate-y" data-aos-delay="300"><a
+                      class="contacts__link" href="#"><svg class="icon icon-instagram">
+                        <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                      <div class="contacts__text">LinkedIn</div>
+                    </a></div>
+                  <div class="contacts__box" data-aos="animation-translate-y" data-aos-delay="450"><a
+                      class="contacts__link" href="#"><svg class="icon icon-instagram">
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                      </svg>
+                      <div class="contacts__text">Twitter</div>
+                    </a></div>
+                </div>
+                <div class="figures">
+                  <div class="figures__preview"><img class="figures__pic" src="img/figures-1.png" alt="" /></div>
+                  <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.6"
+                      data-orientation="up" src="img/figures-2.png" alt="" /></div>
+                  <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="1.3"
+                      data-orientation="up" src="img/figures-3.png" alt="" /></div>
+                  <div class="figures__preview"><img class="figures__pic" src="img/figures-4.png" alt="" /></div>
+                  <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2.3"
+                      data-orientation="down" src="img/figures-5.png" alt="" /></div>
+                  <div class="figures__preview"><img class="figures__pic js-parallax" data-scale="2"
+                      data-orientation="up" src="img/figures-6.png" alt="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer__center center">
+              <div class="footer__body"><a class="footer__logo" href="index.html"><img class="footer__pic"
+                    src="img/logo-empty.svg" alt="" /></a>
+                <div class="footer__wrap">
+                  <div class="footer__title h1">Você só tem uma chance de causar uma boa primeira impressão.</div>
+                  <div class="footer__info h4">Vamos torná-la incrível.</div>
+                </div>
+                <div class="footer__menu"><a class="footer__link" href="#services">Serviços</a><a class="footer__link"
+                    href="#projects">Projetos</a><a class="footer__link" href="#contacts">Contato</a><a
+                    class="footer__link" href="#">LinkedIn</a><a class="footer__link" href="#">Instagram</a></div>
+              </div>
+              <div class="footer__bottom">
+                <div class="footer__copyright">© 2024, DecoDev.</div><a class="footer__scroll js-scroll"
+                  href="#header">Back to top</a>
+              </div>
+            </div>
+            <div class="footer__bg">
+              <div class="footer__preview"><img class="footer__pic js-parallax" data-scale="1.5" data-orientation="down"
+                  src="img/footer-cube-1.png" alt="" /></div>
+              <div class="footer__preview"><img class="footer__pic js-parallax" data-scale="1.8" data-orientation="up"
+                  src="img/footer-cube-1.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
