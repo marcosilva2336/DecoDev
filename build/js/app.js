@@ -3518,3 +3518,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+document.getElementById('submitBtn').addEventListener('click', function(event) {
+  event.preventDefault(); 
+
+  var form = document.querySelector('.contacts__form');
+  var name = form.querySelector('input[name="name"]').value.trim();
+  var email = form.querySelector('input[name="email"]').value.trim();
+  var question = form.querySelector('select[name="question"]').value.trim();
+  var message = form.querySelector('textarea[name="message"]').value.trim();
+
+  if (name && email && question && message) {
+      window.location.href = 'obrigado.html';
+  } else {
+      alert('Por favor, preencha todos os campos corretamente.');
+  }
+});
